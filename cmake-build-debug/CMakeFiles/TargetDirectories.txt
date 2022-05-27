@@ -1,0 +1,3 @@
+C:/Users/isilu/CLionProjects/Flottenkampf/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/isilu/CLionProjects/Flottenkampf/cmake-build-debug/CMakeFiles/Flottenkampf.dir
+C:/Users/isilu/CLionProjects/Flottenkampf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
