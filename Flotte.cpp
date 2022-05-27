@@ -39,8 +39,8 @@ void Flotte::printFleet() {
 
     for(int i = 0; i < size; i++){
         if (flottenListe.at(i)->getHuelle() > 0) {
-            cout << "[" << i << "]: " << flottenListe.at(i)->getName() << "  HP: " <<
-            flottenListe.at(i)->getHuelle() << "Schaden: " << flottenListe.at(i)->getSchaden() << endl;
+            cout << "[" << i << "]: " << flottenListe.at(i)->getName() << "  HP: "<<
+            flottenListe.at(i)->getHuelle() << " Schaden: " << flottenListe.at(i)->getSchaden() << endl;
         } else cout << "[" << i << "]: " << "Destroyed" << endl;
     }
 }

@@ -53,8 +53,30 @@ bool Game::attack(bool player){
 
 int Game::selectShip(Flotte &player) const{
     int input = 0;
-    cin >> input;
-    //check input
+    bool stop = true;
+    while (stop){
+        try {
+            cin >> input;
+            if(cin.fail()){
+                cin.clear();
+                cin.ignore();
+                throw invalid_argument("Fehler: Ihre Eingabe ist ungueltig");
+            }
+            if (input > player.getSize() - 1 || input < 0){
+                throw "Fehler: Schiffe befinden sich nicht in Ihrer Flotte";
+            }
+            if(!player.flottenListe.at(input)->getState()){
+                throw "Schiff wurde bereits zerstoert";
+            }
+            stop = false;
+        } catch (const invalid_argument& msg) {
+            cout << endl << msg.what() << endl;
+            cout << "Versuchen Sie es noch einmal" << endl;
+        }
+        catch (const char* msg){
+            cout << msg << endl;
+        }
+    }
     return input;
 }
 

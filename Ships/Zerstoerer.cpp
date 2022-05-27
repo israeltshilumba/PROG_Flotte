@@ -7,7 +7,7 @@
 Zerstoerer::Zerstoerer() {
     this->huelle = 150;
     this->groesse = 6;
-    this->schaden = 60;
+    this->schaden = 20;
     name = "Zerstoerer";
     state = true;
 }

@@ -8,15 +8,15 @@
 Kreuzer::Kreuzer(){
     this->huelle = 75;
     this->groesse = 6;
-    this->schaden = 30;
+    this->schaden = 20;
     name = "Kreuzer";
     state = true;
 }
 
 int Kreuzer::attack(int dice, int defenderSize) {
     int damage = 0;
-    cout << "DICE: " << "[" << dice <<  "]" << endl;
     if (dice < defenderSize) {
+        cout << "DICE: " << "[" << dice <<  "]" << endl;
         cout << "Erfolgloser Angriff!" << endl;
         return 0;
     }

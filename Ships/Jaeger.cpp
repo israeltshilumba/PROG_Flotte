@@ -8,7 +8,7 @@
 Jaeger::Jaeger() {
     this->huelle = 75;
     this->groesse = 4;
-    this->schaden = 30;
+    this->schaden = 125;
     name = "Jaeger";
     state = true;
 }
