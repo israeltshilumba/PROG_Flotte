@@ -25,6 +25,11 @@ public:
     void setSchaden(int schaden);
     string getName() const;
     bool getState() const;
+    //position
+    int getX() const;
+    void setX(int);
+    int getY() const;
+    void setY(int);
 
 private:
     int huelle;
@@ -32,6 +37,9 @@ private:
     int schaden;
     string name;
     bool state;
+    //position
+    int x;
+    int y;
 };
 
 

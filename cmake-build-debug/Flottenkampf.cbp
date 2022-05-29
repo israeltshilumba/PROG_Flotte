@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/isilu/CLionProjects/Flottenkampf/Dice/Dice.h">
 			<Option target="Flottenkampf"/>
 		</Unit>
+		<Unit filename="C:/Users/isilu/CLionProjects/Flottenkampf/Field.cpp">
+			<Option target="Flottenkampf"/>
+		</Unit>
+		<Unit filename="C:/Users/isilu/CLionProjects/Flottenkampf/Field.h">
+			<Option target="Flottenkampf"/>
+		</Unit>
 		<Unit filename="C:/Users/isilu/CLionProjects/Flottenkampf/Flotte.cpp">
 			<Option target="Flottenkampf"/>
 		</Unit>

@@ -6,7 +6,7 @@
 #include "../Dice/Dice.h"
 
 Kreuzer::Kreuzer(){
-    this->huelle = 75;
+    this->huelle = 150;
     this->groesse = 6;
     this->schaden = 20;
     name = "Kreuzer";
@@ -77,4 +77,21 @@ string Kreuzer::getName() const {
 
 bool Kreuzer::getState() const {
     return this->state;
+}
+
+//position
+int Kreuzer::getX() const {
+    return this->x;
+}
+
+void Kreuzer::setX(int xPosition) {
+    this->x = xPosition;
+}
+
+int Kreuzer::getY() const {
+    return this->y;
+}
+
+void Kreuzer::setY(int yPosition) {
+    this->y = yPosition;
 }

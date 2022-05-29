@@ -152,6 +152,30 @@ Dice/Dice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Flottenkampf.dir\build.make CMakeFiles/Flottenkampf.dir/Dice/Dice.cpp.s
 .PHONY : Dice/Dice.cpp.s
 
+Field.obj: Field.cpp.obj
+.PHONY : Field.obj
+
+# target to build an object file
+Field.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Flottenkampf.dir\build.make CMakeFiles/Flottenkampf.dir/Field.cpp.obj
+.PHONY : Field.cpp.obj
+
+Field.i: Field.cpp.i
+.PHONY : Field.i
+
+# target to preprocess a source file
+Field.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Flottenkampf.dir\build.make CMakeFiles/Flottenkampf.dir/Field.cpp.i
+.PHONY : Field.cpp.i
+
+Field.s: Field.cpp.s
+.PHONY : Field.s
+
+# target to generate assembly for a file
+Field.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Flottenkampf.dir\build.make CMakeFiles/Flottenkampf.dir/Field.cpp.s
+.PHONY : Field.cpp.s
+
 Flotte.obj: Flotte.cpp.obj
 .PHONY : Flotte.obj
 
@@ -332,6 +356,9 @@ help:
 	@echo ... Dice/Dice.obj
 	@echo ... Dice/Dice.i
 	@echo ... Dice/Dice.s
+	@echo ... Field.obj
+	@echo ... Field.i
+	@echo ... Field.s
 	@echo ... Flotte.obj
 	@echo ... Flotte.i
 	@echo ... Flotte.s

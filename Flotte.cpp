@@ -39,10 +39,24 @@ void Flotte::printFleet() {
 
     for(int i = 0; i < size; i++){
         if (flottenListe.at(i)->getHuelle() > 0) {
-            cout << "[" << i << "]: " << flottenListe.at(i)->getName() << "  HP: "<<
-            flottenListe.at(i)->getHuelle() << " Schaden: " << flottenListe.at(i)->getSchaden() << endl;
-        } else cout << "[" << i << "]: " << "Destroyed" << endl;
+            cout << "[" << i << "]: " << flottenListe.at(i)->getName() << " |  HP: "<<
+            flottenListe.at(i)->getHuelle() << " | Schaden: " << flottenListe.at(i)->getSchaden() <<
+            " | POS[X]:" << flottenListe.at(i)->getX() << " | POS[Y]: " << flottenListe.at(i)->getY() << endl;
+        } else cout << "[" << i << "]: " << "** Destroyed **" << endl;
     }
+}
+
+void Flotte::initializePosition(bool player){
+    int tmpY = 0;
+    if (player) tmpY = FIELDSIZE;
+
+
+        for (int i = 0; i < size; i += 1) {
+            flottenListe.at(i)->setX(i);
+            flottenListe.at(i)->setY(tmpY);
+        }
+
+
 }
 
 bool Flotte::checkState(){
@@ -54,3 +68,4 @@ bool Flotte::checkState(){
     }
     return false;
 }
+

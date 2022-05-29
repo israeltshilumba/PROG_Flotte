@@ -6,7 +6,7 @@
 
 
 Jaeger::Jaeger() {
-    this->huelle = 75;
+    this->huelle = 150;
     this->groesse = 4;
     this->schaden = 125;
     name = "Jaeger";
@@ -76,4 +76,20 @@ string Jaeger::getName() const {
 
 bool Jaeger::getState() const {
     return this->state;
+}
+
+int Jaeger::getX() const {
+    return this->x;
+}
+
+void Jaeger::setX(int xPosition) {
+    this->x = xPosition;
+}
+
+int Jaeger::getY() const {
+    return this->y;
+}
+
+void Jaeger::setY(int yPosition) {
+    this->y = yPosition;
 }

@@ -10,6 +10,7 @@
 #include "Schiff.h"
 
 #define MAX_SHIPS 8
+#define FIELDSIZE 15
 using namespace std;
 
 class Flotte {
@@ -23,10 +24,9 @@ public:
     int getSize() const;
     void setSize(int size);
     bool checkState();
-
+    void initializePosition(bool);
 private:
     int size;
-
 };
 
 

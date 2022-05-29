@@ -5,7 +5,7 @@
 #include "Zerstoerer.h"
 
 Zerstoerer::Zerstoerer() {
-    this->huelle = 150;
+    this->huelle = 300;
     this->groesse = 6;
     this->schaden = 20;
     name = "Zerstoerer";
@@ -70,4 +70,21 @@ string Zerstoerer::getName() const {
 
 bool Zerstoerer::getState() const {
     return this->state;
+}
+
+//position
+int Zerstoerer::getX() const {
+    return this->x;
+}
+
+void Zerstoerer::setX(int xPosition) {
+    this->x = xPosition;
+}
+
+int Zerstoerer::getY() const {
+    return this->y;
+}
+
+void Zerstoerer::setY(int yPosition) {
+    this->y = yPosition;
 }

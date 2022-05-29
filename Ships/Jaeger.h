@@ -17,19 +17,26 @@ public:
     int special();
     bool takeDamage(int);
     int getHuelle() const;
-    void setHuelle(int huelle);
+    void setHuelle(int);
     int getGroesse() const;
-    void setGroesse(int groesse);
+    void setGroesse(int);
     int getSchaden() const;
-    void setSchaden(int schaden);
+    void setSchaden(int);
     string getName() const;
     bool getState() const;
+    int getX() const;
+    void setX(int);
+    int getY() const;
+    void setY(int);
 private:
         int huelle;
         int groesse;
         int schaden;
         string name;
         bool state;
+        //position
+        int x;
+        int y;
 };
 
 

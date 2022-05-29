@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Flottenkampf.dir/Dice/Dice.cpp.obj"
+  "CMakeFiles/Flottenkampf.dir/Field.cpp.obj"
   "CMakeFiles/Flottenkampf.dir/Flotte.cpp.obj"
   "CMakeFiles/Flottenkampf.dir/Game/Game.cpp.obj"
   "CMakeFiles/Flottenkampf.dir/Schiff.cpp.obj"
